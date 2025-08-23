@@ -7,7 +7,7 @@ Python 3.9+ with: numpy, pandas, scipy
 
 ## Run
 python SpectTemptLite1.0.py
-# when prompted, enter the path to your spectrum CSV (two columns: wavelength[nm], intensity)
+When prompted, enter the path to your spectrum CSV (two columns: wavelength[nm], intensity)
 
 
 ## Example
