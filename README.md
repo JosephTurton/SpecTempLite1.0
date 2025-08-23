@@ -1,7 +1,18 @@
-# SpecTempLite
+# SpecTemp Lite
 
-## Subtitle 
+Fits temperature, to the nearest 5 k, to an OH(309 nm) spectrum by convolving line strengths with a Gaussian and minimising error vs an experimental CSV.
 
-some text
+## Requirements
+Python 3.9+ with: numpy, pandas, scipy
 
-This is the master branch
+## Run
+python SpectTemptLite1.0.py
+# when prompted, enter the path to your spectrum CSV (two columns: wavelength[nm], intensity)
+
+
+## Example
+Eample_OH_Spectrum is there to run a quick test. SpecTemp should predict the temperature to be 1740 K
+Notes:
+- Script expects a bundled line list in `my_spectral_data.py` (imported as `CSV`). 
+- It peak-aligns around 308.9889945 nm and normalises over ~308.75–309.1 nm. :contentReference[oaicite:2]{index=2}
+requirements.txt
