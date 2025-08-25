@@ -85,7 +85,7 @@ results.append((spec, D))
 errors = [np.mean((s - exp_resampled)**2) for s, _ in results]
 best_index = np.argmin(errors)
 best_s, best_delta = results[best_index]
-print(round(best_delta, 2))
+# print(round(best_delta, 2))
 
 delta_lambda = best_delta
 spectra = [Generate(T) for T in temps]
@@ -99,4 +99,4 @@ spectra = [Generate(T) for T in temps]
 errors = [np.mean((s - exp_resampled)**2) for s in spectra]
 best_temperature = temps[np.argmin(errors)]
 
-print(best_temperature)
+print(f"Estimated Temperature: {best_temperature} K")
