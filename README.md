@@ -6,8 +6,8 @@ Fits temperature, to the nearest 5 k, to an OH(309 nm) spectrum by convolving li
 Python 3.9+ with: numpy, pandas, scipy
 
 ## Run
-python SpectTemptLite1.0.py
-# when prompted, enter the path to your spectrum CSV (two columns: wavelength[nm], intensity)
+python SpectTemptLite1.0.py /path/to/experimental_spectrum
+
 
 
 ## Example
